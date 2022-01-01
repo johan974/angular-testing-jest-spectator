@@ -24,3 +24,4 @@ describe('AppComponent', () => {
     expect(spectator.query('.content span').textContent).toContain('angular-jest-spectator app is running!');
   });
 });
+

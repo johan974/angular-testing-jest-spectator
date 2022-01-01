@@ -29,7 +29,7 @@
     "@angular/cli": "~12.2.1",
     "@angular/compiler-cli": "~12.2.1",
     "@angular/language-service": "~12.2.1",
-    "@ngneat/spectator": "^6.0.0",
+    "@ngneat/spectator": "~7.1.0",
     "@types/jest": "^26.0.14",
     "@types/node": "^12.11.1",
     "codelyzer": "^6.0.1",
