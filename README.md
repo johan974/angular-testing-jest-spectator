@@ -12,5 +12,7 @@ Run `npm test` to see the tests run using Jest and Spectator.
 
 * Component + Service (real) => (Jest) inputtext
 
-* Component + Service (Sim + returnvalue) => (Jest.generateMockFromModule) fake service with return value
+* Component + Service (Sim + returnvalue) => (Jest.genMockFromModule) fake service with return value
+
+* 
 
