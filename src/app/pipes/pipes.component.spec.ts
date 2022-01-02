@@ -12,7 +12,7 @@ fdescribe('PipesComponent', () => {
     beforeEach(async () => {
         await TestBed.configureTestingModule({
             declarations: [PipesComponent, GreetPipe],
-            imports: [ FormsModule]
+            imports: [FormsModule]
         })
             .compileComponents();
     });

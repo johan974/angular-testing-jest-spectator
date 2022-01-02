@@ -6,7 +6,7 @@ export class PwGeneratorService {
     letters = 'abcdefghijklmnopqrstuvwyz';
     symbols = '!@#$%^&*()';
 
-    generatePassword( includeLetters: boolean, includeNumbers: boolean, includeSymbols: boolean, length: number): string {
+    generatePassword(includeLetters: boolean, includeNumbers: boolean, includeSymbols: boolean, length: number): string {
         let validChars = '';
         if (includeLetters) {
             validChars += this.letters;
@@ -18,9 +18,13 @@ export class PwGeneratorService {
             validChars += this.symbols;
         }
 
+        if (validChars.length < 1) {
+            throw new Error('Need either letters, numbers and/or symbols');
+        }
+
         let generatedPassword = '';
         // tslint:disable-next-line:prefer-for-of
-        for ( let i = 0; i < length; i++) {
+        for (let i = 0; i < length; i++) {
             const index = Math.floor(Math.random() * validChars.length);
             generatedPassword += validChars[index];
         }
