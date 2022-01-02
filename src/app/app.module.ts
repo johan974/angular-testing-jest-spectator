@@ -2,19 +2,25 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
-import { InputtextComponent } from './inputtext/inputtext.component';
+import { InputtextComponent } from './component-asks-service/inputtext.component';
 import {TranslationService} from './services/translation.service';
-import { PwgeneratorComponent } from './pwgenerator/pwgenerator.component';
+import { PwgeneratorComponent } from './component-asks-service2/pwgenerator.component';
 import {PwGeneratorService} from './services/pwgenerator.service';
+import { PipesComponent } from './pipes/pipes.component';
+import {FormsModule} from '@angular/forms';
+import {GreetPipe} from './pipes/greet.pipe';
 
 @NgModule({
   declarations: [
     AppComponent,
     InputtextComponent,
-    PwgeneratorComponent
+    PwgeneratorComponent,
+    PipesComponent,
+    GreetPipe
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    FormsModule
   ],
   providers: [TranslationService, PwGeneratorService],
   bootstrap: [AppComponent]

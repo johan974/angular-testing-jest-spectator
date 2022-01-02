@@ -5,7 +5,7 @@ import {PwGeneratorService} from '../services/pwgenerator.service';
 import {createComponentFactory} from '@ngneat/spectator';
 import {clickFormElement, getFormElementValue, setFormElementValue} from '../utils/htmlformfield.helpers';
 
-fdescribe('PwgeneratorComponent', () => {
+describe('PwgeneratorComponent', () => {
   let component: PwgeneratorComponent;
   let fixture: ComponentFixture<PwgeneratorComponent>;
 

@@ -14,6 +14,14 @@ export function getFormElementValue( componentForm: any, selector: string): stri
     return element.value;
 }
 
+export function getElementWithContentValue( componentForm: any, selector: string): string {
+    const element = componentForm.querySelector( selector);
+    if ( ! element) {
+        throw new Error(`Cannot find element: ${selector}`);
+    }
+    return element.textContent;
+}
+
 export function clickFormElement( testFixture: any, selector: string) {
     const debugElement = testFixture.debugElement.query( By.css(selector));
     if (!debugElement) {
