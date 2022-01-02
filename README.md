@@ -7,3 +7,10 @@ This is the source code for the article: [Testing Angular applications with Jest
 Run `npm install` to restore the packages.
 
 Run `npm test` to see the tests run using Jest and Spectator.
+
+## Testen
+
+* Component + Service (real) => (Jest) inputtext
+
+* Component + Service (Sim + returnvalue) => (Jest.generateMockFromModule) fake service with return value
+

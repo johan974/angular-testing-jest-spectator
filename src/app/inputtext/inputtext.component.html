@@ -1,1 +1,5 @@
-<p>inputtext works!</p>
+<p>Translate from English to Spanish:</p>
+<label class="text" for="englishText"></label>
+<input class="input" id="englishText" type="text" (input)="parseText( $event)" />
+<button class="button" (click)="translate()">Translate</button>
+<p>Translated text: {{ translatedText}}</p>
