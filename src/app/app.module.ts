@@ -9,6 +9,7 @@ import {PwGeneratorService} from './services/pwgenerator.service';
 import { PipesComponent } from './pipes/pipes.component';
 import {FormsModule} from '@angular/forms';
 import {GreetPipe} from './pipes/greet.pipe';
+import { Component1Component } from './component1/component1.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import {GreetPipe} from './pipes/greet.pipe';
     InputtextComponent,
     PwgeneratorComponent,
     PipesComponent,
-    GreetPipe
+    GreetPipe,
+    Component1Component
   ],
   imports: [
     BrowserModule,
