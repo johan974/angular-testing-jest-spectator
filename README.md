@@ -1,5 +1,9 @@
 # Reproduce error: 
 
+* This is just a demo project. The interesting part for Spectator is the 'component1' component. 
+* Start 'ng serve' and you see a simple page. 
+* Start 'jest --watch' and the tests start. Watch for the 'component1.component*.spec.ts' tests. 
+
 * This is a Angular 12 project with a Spectator 7.1. 
 
 These are the commands I did: 
