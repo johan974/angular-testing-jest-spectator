@@ -1,18 +1,31 @@
-# Testing Angular applications with Jest and Spectator
+# Reproduce error: 
 
-This is the source code for the article: [Testing Angular applications with Jest and Spectator](https://itnext.io/testing-angular-applications-with-jest-and-spectator-c05991579807).
+* This is a Angular 12 project with a Spectator 7.1. 
 
-## Setup
+These are the commands I did: 
 
-Run `npm install` to restore the packages.
+* Update project to Angular 13
 
-Run `npm test` to see the tests run using Jest and Spectator.
+$ npx @angular/cli@13 update @angular/core@13 @angular/cli@13 --force -allow-dirty
 
-## Testen
+* Update Spectator from 7.1.4 to 10.0.0. 
 
-* Component + Service (real) => (Jest) inputtext
+$ npm i --save-dev @ngneat/spectator@latest
 
-* Component + Service (Sim + returnvalue) => (Jest.genMockFromModule) fake service with return value
+The error message is: 
 
-* 
+npm ERR! code ERESOLVE
+npm ERR! ERESOLVE unable to resolve dependency tree
+npm ERR!
+npm ERR! node_modules/@ngneat/spectator
+npm ERR!   dev @ngneat/spectator@"10.0.0" from the root project
+npm ERR!
+npm ERR! Fix the upstream dependency conflict, or retry
+npm ERR! this command with --force, or --legacy-peer-deps
+npm ERR! to accept an incorrect (and potentially broken) dependency resolution.
+npm ERR!
+npm ERR! See C:\Users\Johan\AppData\Local\npm-cache\eresolve-report.txt for a full report.
+
+
+
 
