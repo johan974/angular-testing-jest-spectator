@@ -16,8 +16,9 @@ $ npx @angular/cli@13 update @angular/core@13 @angular/cli@13 --force -allow-dir
 
 $ npm i --save-dev @ngneat/spectator@latest
 
-The error message is: 
+Does not work. The error message is: 
 
+<code>
 npm ERR! code ERESOLVE
 npm ERR! ERESOLVE unable to resolve dependency tree
 npm ERR!
@@ -29,6 +30,15 @@ npm ERR! this command with --force, or --legacy-peer-deps
 npm ERR! to accept an incorrect (and potentially broken) dependency resolution.
 npm ERR!
 npm ERR! See C:\Users\Johan\AppData\Local\npm-cache\eresolve-report.txt for a full report.
+</code>
+
+Next step is to force the update
+
+$ npm i --save-dev @ngneat/spectator@latest --force -allow-dirty
+
+Works. BUT ...
+
+Starting the 'jest --watch' reveals an error. 
 
 
 
